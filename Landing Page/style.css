@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;    
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(0deg, rgb(175, 31, 31) 16%, #e08244);    
+}
+
+.header-main{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: space-around;  
+    padding-top: 12px;    
+}
+
+.header-logo{
+    max-height: 72px;      
+}
+
+.header-menu{
+    display: flex;
+    gap: 32px;        
+}
+
+.header-menu-item{
+    font-family: 'Heebo', sans-serif;
+    color: #e7e4ce;    
+    font-weight: 400;
+    font-size: 20px;    
+}
+
+.content{    
+    margin-top: 8px;
+    border-top: 0.4px solid #ebde95;  
+    margin-bottom: 20px;       
+    background-size: cover;    
+}
+
+.content-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;    
+    margin-left: 100px;
+    margin-right: 100px;
+}
+        
+.content-main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content:space-around;  
+}
+
+.content-main-text-title{
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: #ebde95;    
+}
+
+.content-main-text-subtitle{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 24px;        
+    color: #e7e4ce;    
+}
+
+.content-main-text-button{
+    margin-top: 25px;
+    background-color: #ebde95;    
+    width: 180px;
+    height: 60px;   
+    border: none; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.452);
+    border-radius: 20px;    
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+}
+
+.content-main-text-button:hover{
+    background-color: #24221b;
+    color: white;
+}
+
+.content-main-image{
+    max-height: 720px;
+}
+
+
+.content-secondary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    margin-top: 24px;
+}
+
+.content-secondary-title{
+    border-top: 0.4px solid #ebde95;
+    padding-top: 24px;
+    font-family: 'Anton', sans-serif;
+    color: #ebde95;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.content-secondary-paragraph{
+    font-family: 'Heebo', sans-serif;
+    color: #e7e4ce;
+    font-weight: 200px;
+    font-size: 16px;
+}
+
+.content-footer{
+    margin-top: 32px;
+    padding: 32px;
+    border-top: 0.4px solid #ebde95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-footer-text{
+    color: #ebde95;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.content-footer-image{
+    width: 64px;
+    height: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+}
