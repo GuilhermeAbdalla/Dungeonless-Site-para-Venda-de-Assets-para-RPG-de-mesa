@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco Formulário</title>
+</head>
+<body>
+    <h1>Fale Conosco</h1>
+    <form name="formulario teste" action="action_page.php">
+        <fieldset>
+            <div>
+                <label for="nomeUsuario">Nome</label> <br>
+                <input type="text" id="nomeUsuario" name="nome" placeholder="Insira seu Nome" required="required">
+            </div>
+            <div>
+                <label for="emailUsuario">Email</label> <br>
+                <input type="email" id="emailUsuario" name="email" placeholder="emailexemplo@gmail.com" required="required">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="problemaUsuario">Você é:</label> <br>
+                <input type="radio" id="artista2d" name="problemaUsuario" value="artista2d" checked> Artista 2D <br>                
+                <input type="radio" id="artista3d" name="problemaUsuario" value="artista3d"> Artista 3D <br>                
+                <input type="radio" id="comprador" name="problemaUsuario" value="comprador"> Comprador <br>                
+            </div>
+            <div>
+                <label for="problema">Seu problema está relacionado à:</label> <br>
+                <input type="checkbox" id="config_conta" name="problema" value="configConta"> Configuração da Conta <br>              
+                <input type="checkbox" id="acesso_conta" name="problema" value="AcessConta"> Acesso da Conta <br>                
+                <input type="checkbox" id="site" name="problema" value="site"> Problema com o Site <br>                
+                <input type="checkbox" id="compra" name="problema" value="compra"> Problemas com Compra <br>                
+                <input type="checkbox" id="venda" name="problema" value="venda"> Problemas com Venda <br>                
+            </div>
+            <div>
+                <label>De qual lugar do mundo você é?</label> <br>
+                <select id="worldplace">
+                    <option selected disabled value="">Selecione</option>
+                    <option>North America</option>
+                    <option>South America</option>
+                    <option>Asia</option>
+                    <option>Europe</option>                    
+                </select>
+            </div>
+            <div>
+                <label for="problem">Descreva seu problema abaixou (20 a 200 caracteres):</label> <br>
+                <textarea rows="6" style="width: 26em" id="problem" name="problem" placeholder="Min: 20 Caracteres/Max: 200 Caracteres" minlength="20" maxlength="200" required="required"></textarea>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Submit">          
+        </div>
+    </form>
+</body>
+</html>
